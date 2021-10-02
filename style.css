@@ -192,7 +192,7 @@ main {
 }
 
 main::after {
-  background: url("/assets/images/home-background.png") center center / cover
+  background: url("https://github.com/bickkysahani/disney-clone-htm-css-js/blob/main/assets/images/home-background.png") center center / cover
     no-repeat fixed;
   content: "";
   position: absolute;
