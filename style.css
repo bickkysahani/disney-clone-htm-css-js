@@ -130,7 +130,7 @@ body {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://github.com/bickkysahani/disney-clone-htm-css-js/blob/main/assets/images/login-background.jpg");
+  background-image: url("./assets/images/login-background.jpg");
   position: absolute;
   top: 0px;
   right: 0px;
@@ -192,7 +192,7 @@ main {
 }
 
 main::after {
-  background: url("https://github.com/bickkysahani/disney-clone-htm-css-js/blob/main/assets/images/home-background.png") center center / cover
+  background: url("./assets/images/home-background.png") center center / cover
     no-repeat fixed;
   content: "";
   position: absolute;
