@@ -1,0 +1,381 @@
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+  color: #f9f9f9;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px){
+  body {
+    font-size: 16px;
+}
+}
+
+main {
+  display: block;
+}
+
+:root {
+  --primary-color: rgb(9, 11, 19);
+  --secondary-color: rgba(0, 0, 0, 0.6);
+  --tertiary-color: rgb(249, 249, 249);
+  --text-white: #f9f9f9;
+  --text-black: #000000;
+  --text-grey: #f3f3f3;
+  --btn-hover:rgb(249, 249, 249);
+  --text-blue:#0063e5;
+}
+
+a {
+
+  text-decoration: none;
+}
+body {
+  font-family: "Avenir-Roman", sans-serif;
+}
+
+/* .container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+} */
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: var(--primary-color);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 12px 36px;
+  z-index: 3;
+}
+.logo {
+  width: 80px;
+  margin-top: 4px;
+  max-height: 70px;
+  display: inline-block;
+}
+
+.logo > img {
+  display: block;
+  width: 100%;
+}
+.login-btn {
+  background-color: transparent;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 4px;
+  transition: all 0.2s ease 0s;
+  color: var(--text-white);
+}
+
+.login-btn:hover {
+  background-color: var(--btn-hover);
+  color: var(--text-black);
+  border-color: transparent;
+}
+
+.header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.header-container {
+  margin-bottom: 10vw;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 40px;
+}
+
+.header-content {
+  margin: 0px auto 2vw;
+  max-width: 650px;
+  flex-flow: column wrap;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.2s ease 0s;
+  width: 100%;
+}
+.header-bg {
+  height: 100%;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/login-background.jpg");
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.cta-logo-one {
+  margin-bottom: 12px;
+  max-width: 600px;
+  min-height: 1px;
+  display: block;
+  width: 100%;
+}
+
+.sign-up-btn {
+  font-weight: bold;
+  color: var(--text-white);
+  background-color: var(--text-blue);
+  margin-bottom: 12px;
+  width: 100%;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  padding: 16.5px 0px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sign-up-btn:hover {
+  background-color: #0483ee;
+}
+
+.description {
+  color: var(--text-white);
+  font-size: 11px;
+  margin: 0px 0px 24px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+.cta-logo-two {
+  max-width: 600px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease 0s;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  min-height: calc(100vh - 250px);
+  overflow-x: hidden;
+  display: block;
+  top: 70px;
+  padding: 0 calc(3.5vw + 5px);
+  padding-bottom: 100px;
+}
+
+main::after {
+  background: url("/assets/images/home-background.png") center center / cover
+    no-repeat fixed;
+  content: "";
+  position: absolute;
+  inset: 0px;
+  opacity: 1;
+  z-index: -1;
+}
+
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel > button {
+  opacity: 0;
+  height: 100%;
+  width: 5vw;
+  z-index: 1;
+}
+.carousel > button:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+}
+
+.carousel ul li button:before {
+  font-size: 10px;
+  color: rgb(150, 158, 171);
+}
+
+.carousel li.slick-active button:before {
+  color: white;
+}
+
+.slick-list {
+  overflow: initial;
+}
+
+.slick-prev {
+  left: -75px;
+}
+
+.slick-next {
+  right: -75px;
+}
+
+.wrap {
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrap > a {
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 4px;
+}
+
+.wrap > a img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap > a:hover {
+  padding: 0;
+  border: 4px solid rgba(249, 249, 249, 0.8);
+  transition-duration: 300ms;
+}
+
+.viewers {
+  margin-top: 30px;
+  padding: 30px 0px 26px;
+  display: grid;
+  grid-gap: 25px;
+  gap: 25px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .viewers {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.view {
+  padding-top: 56.25%;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+}
+
+.view > img {
+  inset: 0px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 500ms ease-in-out 0s;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.view > video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  z-index: 0;
+}
+
+.view:hover {
+  box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+
+  transform: scale(1.05);
+  border-color: rgba(249, 249, 249, 0.8);
+}
+
+.view:hover video {
+  opacity: 1;
+}
+
+.recommends > container {
+  padding: 0 0 26px;
+}
+
+.disney-content {
+  display: grid;
+  grid-gap: 25px;
+  gap: 25px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .disney-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  padding-top: 56.25%;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+  transform: scale(.95);
+}
+
+.card:hover {
+  box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+    rgb(0 0 0 / 72%) 0px 30px 22px -10px;
+  transform: scale(1);
+  border-color: rgba(249, 249, 249, 0.8);
+}
+
+.card > img {
+  inset: 0px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 500ms ease-in-out 0s;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+
+footer{
+  text-align: center;
+}
